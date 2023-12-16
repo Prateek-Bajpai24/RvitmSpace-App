@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/addsubj"
+    app:cardCornerRadius="10dp">
+    <View
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/newpurp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add new class"
+                    android:textColor="@color/newpurp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/baseline_close_24"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <AutoCompleteTextView
+                    android:id="@+id/sem"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:hint="Semester(scroll to view)"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="15dp"/>
+                <AutoCompleteTextView
+                    android:backgroundTint="@android:color/black"
+                    android:layout_width="0dp"
+                    android:id="@+id/dept"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Department"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+            <AutoCompleteTextView
+                android:id="@+id/batch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Batch(scroll to view)"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@android:color/black"
+                android:textSize="15dp"/>
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/coursecode"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Course Code(Select from below, scroll to view)"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:textSize="15dp"/>-->
+            <EditText
+                android:id="@+id/coursecode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black"
+                android:layout_marginTop="13dp"
+                android:textSize="15dp"
+                android:hint="Enter course code"
+                android:textAlignment="center"/>
+            <EditText
+                android:backgroundTint="@android:color/black"
+                android:id="@+id/course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter course"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:maxLines="1"
+                android:textSize="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/credittext"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Credit"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="15dp"/>
+                <AutoCompleteTextView
+                    android:backgroundTint="@android:color/black"
+                    android:layout_width="0dp"
+                    android:id="@+id/typetext"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:hint="Type(Scroll to view)"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:backgroundTint="@color/newpurp"
+                    app:cornerRadius="10dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="50dp"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add"
+                    android:id="@+id/add"
+                    android:backgroundTint="@color/newpurp"
+                    app:cornerRadius="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:id="@+id/linv"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.FoldingCube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/newpurp" />
+        <TextView
+            android:id="@+id/load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

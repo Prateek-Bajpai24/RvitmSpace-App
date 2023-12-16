@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RVITMSpace</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="bottom_nav_open">Open bottom navigation drawer</string>
+    <string name="bottom_nav_close">Close bottom navigation drawer</string>
+</resources>

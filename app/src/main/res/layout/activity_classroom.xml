@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayNotice"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu"
+        android:layout_gravity="start"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:id="@+id/relpar"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="80dp"-->
+<!--                    android:id="@+id/pardispnot"-->
+<!--                    android:orientation="vertical" />-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60dp"
+                    android:id="@+id/classroom_recycler"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Space"
+                    android:textSize="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@android:color/transparent"/>
+            </LinearLayout>
+        </ScrollView>
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="0dp"
+            android:id="@+id/chtex"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/newpurp"
+            android:layout_height="55dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Your Classrooms"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="60dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:id="@+id/linv"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.FoldingCube"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:SpinKit_Color="@color/newpurp" />
+            <TextView
+                android:id="@+id/load"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/newpurp"
+                    android:src="@drawable/baseline_add_24"
+                    app:maxImageSize="40dp"
+                    android:id="@+id/fab"
+                    app:borderWidth="-2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    app:tint="@android:color/white" />
+
+    </RelativeLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--        <include-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            layout="@layout/toolbar"/>-->
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="65dp">-->
+    <!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentStart="true"-->
+<!--                android:text="Your Classrooms"-->
+<!--                android:textSize="25dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginStart="60dp"-->
+<!--                android:textStyle="bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:text="EDIT"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_marginEnd="20dp"/>-->
+<!--        </RelativeLayout>-->
+<!--        <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            tools:context=".MainActivity">-->
+
+<!--            <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--                android:id="@+id/bottomAppBar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom"-->
+
+<!--                app:fabCradleMargin="10dp"-->
+<!--                app:fabCradleRoundedCornerRadius="50dp">-->
+
+<!--                <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--                    android:id="@+id/bottomNavigationView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="20dp"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    app:labelVisibilityMode="labeled"-->
+<!--                    app:menu="@menu/nav_menu" />-->
+
+<!--            </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:backgroundTint="@color/white"-->
+<!--                android:src="@drawable/baseline_add_24"-->
+<!--                app:layout_anchor="@id/bottomAppBar"-->
+<!--                app:maxImageSize="40dp"-->
+<!--                android:id="@+id/fab"-->
+<!--                app:tint="@color/lavender" />-->
+
+<!--        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+<!--    </RelativeLayout>-->
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+    </group>
+    <item android:title="Notice Board">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/navPost_notice"
+                    android:icon="@drawable/subitem_icon1"
+                    android:title="Post Notice" />
+                <item
+                    android:id="@+id/navDisplay_notice"
+                    android:icon="@drawable/noticeboard"
+                    android:title="Display Board" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Classroom">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/classroom"
+                      android:icon="@drawable/baseline_groups_24"
+                      android:title="Your Classroom"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Study Material">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_ebooks"
+                    android:icon="@drawable/ebook"
+                    android:title="Ebooks" />
+                <item
+                    android:id="@+id/nav_pyq"
+                    android:icon="@drawable/paper"
+                    android:title="PYQs" />
+                <item
+                    android:id="@+id/nav_theme"
+                    android:icon="@drawable/paint"
+                    android:title="Theme" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="About Us">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/baseline_share_24"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/dev"
+                    android:title="Developers" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/logout"
+                    android:title="Logout" />
+            </group>
+        </menu>
+    </item>
+</menu>

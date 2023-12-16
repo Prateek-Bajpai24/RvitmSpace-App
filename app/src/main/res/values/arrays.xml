@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colors">
+        <item>@color/test</item>
+        <item>@color/test1</item>
+        <item>@color/test2</item>
+        <item>@color/test5</item>
+        <item>@color/test6</item>
+        <item>@color/test3</item>
+        <item>@color/test4</item>
+        <item>@color/test7</item>
+        <item>@color/test8</item>
+        <item>@color/purple_200</item>
+        <item>@color/sun</item>
+        <item>@color/blue_20</item>
+        <item>@color/floatgreen</item>
+        <item>@color/newpurp</item>
+        <item>@color/purple</item>
+    </array>
+</resources>

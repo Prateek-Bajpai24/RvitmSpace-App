@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="test">#60615F</color>
+    <color name="test1">#5F64FD</color>
+    <color name="test2">#1BFFFF</color>
+    <color name="test3">#EE9CA7</color>
+    <color name="test4">#FFDDE1</color>
+    <color name="test5">#FBB040</color>
+    <color name="test6">#F9ED32</color>
+    <color name="test7">#BDC3C7</color>
+    <color name="test8">#2C3E50</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="purple">#8692f7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="blue_20">#6286cb</color>
+    <color name="deepPurple">#7C4DFF</color>
+    <color name="lightGrey">#c1c1c1</color>
+    <color name="textColor">#121212</color>
+    <color name="floatgreen">#FF016E49</color>
+    <color name="grey">#FF6A6464</color>
+    <color name="newpurp">#9c88c5</color>
+    <color name="sun">#FDB813</color>
+    <color name="absentred">#D5525D</color>
+    <color name="absentredcon">#F699A1</color>
+    <color name="presentgreen">#02CD2E</color>
+    <color name="presentgreencon">#83FF9E</color>
+    <color name="confocolor">#5E635F</color>
+</resources>

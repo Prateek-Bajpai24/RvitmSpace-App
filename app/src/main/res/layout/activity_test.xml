@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+  <com.google.android.material.navigation.NavigationView
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:id="@+id/nav_view"
+      app:headerLayout="@layout/header"
+      app:menu="@menu/main_menu"
+      android:layout_gravity="start">
+  </com.google.android.material.navigation.NavigationView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <include
+          android:id="@+id/toolbar"
+          layout="@layout/toolbar"/>
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:background="@color/newpurp"
+          android:layout_height="55dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Post Notice"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp"
+            android:textStyle="bold"/>
+      </RelativeLayout>
+<!--      <TextView-->
+<!--          android:layout_width="wrap_content"-->
+<!--          android:layout_height="wrap_content"-->
+<!--          android:fontFamily="sans-serif-condensed-medium"-->
+<!--          android:textAlignment="center"-->
+<!--        android:text="Your post will will appear as below.\nTap to select and scroll to view"-->
+<!--        android:textSize="20dp"-->
+<!--          android:textStyle="bold"-->
+<!--          android:layout_marginTop="20dp"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dispnot"
+            android:gravity="center_vertical"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="70dp"
+            android:orientation="vertical">
+
+
+
+
+
+          <!--            <LinearLayout-->
+          <!--                android:id="@+id/dispnot"-->
+          <!--                android:layout_width="match_parent"-->
+          <!--                android:layout_height="wrap_content"-->
+          <!--                android:layout_alignParentTop="true"-->
+          <!--                android:layout_marginStart="40px"-->
+          <!--                android:layout_marginTop="50dp"-->
+          <!--                android:layout_marginEnd="50px"-->
+          <!--                android:orientation="vertical">-->
+
+          <TextView
+              android:id="@+id/it"
+              android:fontFamily="serif-monospace"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <TextView
+              android:id="@+id/pt"
+              android:fontFamily="serif-monospace"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+
+          <!--            </LinearLayout>-->
+        </LinearLayout>
+
+
+
+<!--      <View-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="2dp"-->
+<!--          android:layout_alignParentBottom="true"-->
+<!--          android:layout_marginBottom="60dp"-->
+<!--          android:background="@android:color/black" />-->
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+          android:fitsSystemWindows="true"
+          android:layout_marginStart="15dp"
+          android:layout_marginEnd="15dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/border_draw">
+
+        <ImageView
+            android:id="@+id/putcaption"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_draw"
+            android:src="@drawable/baseline_check_circle_outline_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <EditText
+            android:id="@+id/caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@+id/pdfselect"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Add to your post"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imgselect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border_draw"
+            android:src="@drawable/tosicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/pdfselect"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toStartOf="@+id/imgselect"
+            android:background="@drawable/border_draw"
+            android:src="@drawable/pdflogo23"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+      </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>
+
